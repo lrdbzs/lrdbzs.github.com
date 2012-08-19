@@ -9,18 +9,54 @@
 	
 	<link type="text/css" rel="stylesheet" href="http://current.bootstrapcdn.com/bootstrap-v204/css/bootstrap.min.css" />
 	<link type="text/css" rel="stylesheet" href="http://ajax.aspnetcdn.com/ajax/jquery.ui/1.8.22/themes/redmond/jquery-ui.css" />
+	<style type="text/css">
+	body{
+		font-family: "Helvetica Neue", Helvetica, "Microsoft YaHei", 宋体b8b\4f53, Arial, sans-serif;
+		font-size: 14px;
+	}
+	.large-font{
+		font-family: "Microsoft YaHei";
+		font-size: 432px;
+		font-weight: bold;
+		position: fixed;
+	}
+	.sub-font{
+		font-family: "Microsoft YaHei";
+		font-size: 72px;
+		font-weight: bold;
+		left: 50%;
+		margin:0 auto;
+		position: fixed;
+		top: 300px;
+	}
+	footer{
+		background-color:#fff;
+		bottom:0;
+		border-top:3px solid #aaa;
+		height:120px;
+		padding-top:10px;
+		position: fixed;
+		width:100%;
+	}
+	.middle{
+		margin:0 auto;
+		text-align: center;
+	}
+	</style>
 	<!--[if lt IE 9]>
 	<script type="text/javascript" src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
 </head>
 <body>
-	(请使用Chrome浏览器查看)
-	<button data-toggle="modal" href="#myModal" class="btn">打开窗口</button>
-	<div>
-		<input type="text" name="hour" id="hour" class="knob" data-max="24" data-readOnly="true" value="0"/>
-		<input type="text" name="minute" id="minute" class="knob" data-max="60" data-readOnly="true" value="0"/>
-		<input type="text" name="second" id="second" class="knob" data-max="60" data-readOnly="true" value="0"/>
-	</div>
+	<p class="large-font">JUST</p>
+	<p class="sub-font">DO IT !</p>
+	<footer>
+		<div class="middle">
+			<input type="text" name="hour" id="hour" class="knob" data-width="100" data-max="24" data-readOnly="true" value="0"/>
+			<input type="text" name="minute" id="minute" class="knob" data-width="100" data-max="60" data-readOnly="true" value="0"/>
+			<input type="text" name="second" id="second" class="knob" data-width="100" data-max="60" data-readOnly="true" value="0"/>
+		</div>
+	</footer>
 	<!-- 弹窗控件 -->
 	<div id="myModal" class="modal fade">
 		<div class="modal-header">
