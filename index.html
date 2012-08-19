@@ -75,13 +75,13 @@
 		<div class="modal-footer"></div>
 	</div>
 	<script type="text/javascript" src="http://lib.sinaapp.com/js/jquery/1.8/jquery.min.js"></script>
-	<script type="text/javascript" src="http://current.bootstrapcdn.com/bootstrap-v204/js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="http://anthonyterrien.com/knob/js/jquery.knob.js"></script>
+	<!--
+	<script type="text/javascript" src="http://current.bootstrapcdn.com/bootstrap-v204/js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jquery.ui/1.8.22/jquery-ui.min.js"></script>
-	<script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jquery.ui/1.8.22/i18n/jquery.ui.datepicker-zh-CN.min.js"></script>
+	-->
 	<script type="text/javascript">
 		$('.knob').knob();
-		setTimeout(showTime,1000);
 		function showTime(){
 			var date = new Date();
 			$('#hour').val(date.getHours()).change();
@@ -89,6 +89,7 @@
 			$('#second').val(date.getSeconds()).change();
 			setTimeout(showTime,1000);
 		}
+		showTime();
 	</script>
 </body>
 </html>
