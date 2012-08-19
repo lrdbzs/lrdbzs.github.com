@@ -11,6 +11,7 @@
 	<link type="text/css" rel="stylesheet" href="http://ajax.aspnetcdn.com/ajax/jquery.ui/1.8.22/themes/redmond/jquery-ui.css" />
 	<style type="text/css">
 	body{
+		background-image: url(data:image/gif;base64,R0lGODlhAwADAIAAAP///+fn5yH5BAAAAAAALAAAAAADAAMAAAIERAxpBQA7);
 		font-family: "Helvetica Neue", Helvetica, "Microsoft YaHei", 宋体b8b\4f53, Arial, sans-serif;
 		font-size: 14px;
 	}
@@ -19,15 +20,16 @@
 		font-size: 432px;
 		font-weight: bold;
 		position: fixed;
+		top:50px;
 	}
 	.sub-font{
 		font-family: "Microsoft YaHei";
 		font-size: 72px;
 		font-weight: bold;
-		left: 50%;
+		left: 60%;
 		margin:0 auto;
 		position: fixed;
-		top: 300px;
+		top: 320px;
 	}
 	footer{
 		background-color:#fff;
@@ -37,6 +39,11 @@
 		padding-top:10px;
 		position: fixed;
 		width:100%;
+	}
+	.my-label{
+		left:20px;
+		position:absolute;
+		top:-25px;
 	}
 	.middle{
 		margin:0 auto;
@@ -51,6 +58,7 @@
 	<p class="large-font">JUST</p>
 	<p class="sub-font">DO IT !</p>
 	<footer>
+		<span class="label label-warning my-label">I'm "冰中水", come in soon!</span>
 		<div class="middle">
 			<input type="text" name="hour" id="hour" class="knob" data-width="100" data-max="24" data-readOnly="true" value="0"/>
 			<input type="text" name="minute" id="minute" class="knob" data-width="100" data-max="60" data-readOnly="true" value="0"/>
